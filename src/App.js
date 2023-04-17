@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import { ProtectedRoute } from './hoc/ProtectedRoutes';
-import Discover from './pages/discover/Discover';
+import Dashboard from './pages/dashboard/Dashboard';
 import CarList from './pages/carList/CarList';
 import CarDetail from './pages/carDetail/CarDetail';
 import AddNewCar from './pages/addNewCar/AddNewCar';
@@ -15,7 +15,7 @@ function App() {
   return (
     <Routes>
         <Route element={<ProtectedRoute />}>
-            <Route path='/discovery' element={<Discover />} />
+            <Route path='/dashboard' element={<Dashboard />} />
             <Route path='/car-list' element={<CarList />} />
             <Route path='/car-detail' element={<CarDetail />} />
             <Route path='/add-new-car' element={<AddNewCar />} />

@@ -8,7 +8,8 @@ export const regisAction = (payload) => (dispatch) => {
                 type: 'REGIS',
                 payload: res.statusText,
             })
-            console.log(res.statusText)
+            // console.log(res.statusText)
+            // console.log(res)
         })
         .catch((err) => console.log(err))
 }

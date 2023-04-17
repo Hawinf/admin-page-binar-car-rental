@@ -1,6 +1,6 @@
-import './Discover.css'
+import './Dashboard.css'
 
-const Discover = () => {
+const Dashboard = () => {
     return (
         <div className='wrapper-discover'>
             <h1>Discover Page</h1>
@@ -8,4 +8,4 @@ const Discover = () => {
     )
 }
 
-export default Discover
+export default Dashboard
