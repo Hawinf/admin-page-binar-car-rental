@@ -21,8 +21,8 @@ const loginReducer = (state = initialState, Action) => {
             case 'CHECK_TOKEN':
                 return {
                     ...initialState,
-                    isLogin: Action.payload,
-                    loading: Action.payload
+                    isLogin: Action.payload.isLogin,
+                    loading: Action.payload.loading
                 };
             default:
                 return state;

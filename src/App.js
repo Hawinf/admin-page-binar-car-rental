@@ -22,8 +22,8 @@ function App() {
             <Route path='/edit-car' element={<Edit />} />
         </Route>
         
-        <Route path='/' element={<Login />} />
-        <Route path='/register' element={<Register />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/' element={<Register />} />
     </Routes>
   );
 }

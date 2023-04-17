@@ -15,3 +15,11 @@ export const loginAction = (payload) => (dispatch) => {
         // console.log(res)
         .catch((err) => console.log(err))
 }
+
+export const handleLogOut = (payload) => (dispatch) => {
+    localStorage.removeItem('token');
+    dispatch({
+        type: 'LOGOUT',
+        payload: false
+    })
+}

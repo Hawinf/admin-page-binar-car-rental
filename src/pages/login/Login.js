@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 import LoginImage from '../../assets/images/loginimage.png'
 import LoginLogo from '../../assets/images/Rectangle62.png'
 import './Login.css'
-
+ 
 const Login = () => {
 
     const {loginReducer} = useSelector(state => state)
