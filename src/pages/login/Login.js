@@ -30,7 +30,7 @@ const Login = () => {
     const handleRedirect = () => {
         setTimeout(() => {
             if (loginReducer.message === true) {
-                navigate('/discovery')
+                navigate('/dashboard')
             }
         }, 2000)
     }

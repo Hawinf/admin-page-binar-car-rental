@@ -5,6 +5,7 @@ import LoginLogo from '../../assets/images/Rectangle62.png'
 import './Register.css'
 import { useDebugValue, useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Register = () => {
     const {regisReducer} = useSelector(state => state)
@@ -58,6 +59,9 @@ const Register = () => {
                 <div>
                     <button onClick={handleRegis} className='btn btn-primary w-100 mt-4'>Register</button>
                 </div>
+                <p className='text-center mt-3'>Have an account?
+                        <Link to={'/login'}> Sign In</Link>   
+                </p>
             </div>
         </div>
     )

@@ -14,6 +14,9 @@ import Register from './pages/register/Register';
 function App() {
   return (
     <Routes>
+        <Route path='/' element={<Register />} />
+        <Route path='/login' element={<Login />} />
+
         <Route element={<ProtectedRoute />}>
             <Route path='/dashboard' element={<Dashboard />} />
             <Route path='/car-list' element={<CarList />} />
@@ -21,9 +24,6 @@ function App() {
             <Route path='/add-new-car' element={<AddNewCar />} />
             <Route path='/edit-car' element={<Edit />} />
         </Route>
-        
-        <Route path='/login' element={<Login />} />
-        <Route path='/' element={<Register />} />
     </Routes>
   );
 }

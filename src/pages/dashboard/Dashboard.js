@@ -2,8 +2,8 @@ import './Dashboard.css'
 
 const Dashboard = () => {
     return (
-        <div className='wrapper-discover'>
-            <h1>Discover Page</h1>
+        <div className='wrapper-dashboard'>
+            <h1>Dashboard Page</h1>
         </div>
     )
 }
