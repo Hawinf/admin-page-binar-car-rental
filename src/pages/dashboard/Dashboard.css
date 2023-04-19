@@ -67,17 +67,3 @@
 }
 /* End Of Dashboard Left */
 
-.dashboard-middle {
-    left: 8%;
-    position: absolute;
-}
-.dashboard-middle .dashboard-title {
-    margin-top: 15px;
-    font-weight: 700;
-    font-size: 14px;
-    color: #8A8A8A;
-}
-.dashboard-middle .dashboard-option {
-    font-weight: 700;
-    font-size: 14px;
-}

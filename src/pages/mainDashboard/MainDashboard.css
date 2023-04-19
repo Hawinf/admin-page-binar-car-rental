@@ -1,0 +1,35 @@
+.dashboard-middle {
+    left: 8%;
+    position: absolute;
+}
+.dashboard-middle .dashboard-title {
+    margin-top: 15px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #8A8A8A;
+}
+.dashboard-middle .dashboard-option {
+    font-weight: 700;
+    font-size: 14px;
+}
+/* End Of Dashboard Middle */
+
+.dashboard-main .dashboard-main-judul{
+    display: flex;
+    left: 20%;
+    position: relative;
+    margin-top: 13px;
+}
+.dashboard-main-judul .main-judul-sign {
+    height: 8px;
+    width: 4px;
+    margin: 6px 5px 0 5px;
+}
+.dashboard-main-judul .judul-kiri{
+    font-size: 12px;
+    font-weight: 700;
+}
+.dashboard-main-judul .judul-kanan {
+    font-size: 12px;
+    font-weight: 300;
+}

@@ -4,7 +4,9 @@ import Fimenu from '../../assets/images/fi_menu.png'
 import Fitruck from '../../assets/images/fi_truck.png'
 import Group from '../../assets/images/Group2.png'
 import Vector from '../../assets/images/Vector.png'
+import Vector1 from '../../assets/images/Vector1.png'
 import './Dashboard.css'
+import { Link } from 'react-router-dom'
 
 const Dashboard = () => {
     return (
@@ -12,7 +14,9 @@ const Dashboard = () => {
 
             <div className='dashboard-top'>
                 <div className='dashboard-logo'>
-                    <img className='logo-1' src={Rectangle62} />
+                    <Link to='/dashboard'>
+                        <img className='logo-1' src={Rectangle62} />
+                    </Link>
                     <button className='tombol-1'>
                         <img className='logo-2' src={Fimenu} />
                     </button>
@@ -28,25 +32,26 @@ const Dashboard = () => {
 
             <div className='dashboard-left text-center'>
                 <div className='logo-3'>
-                    <button className='tombol-2'>
-                        <img src={Rectangle63} />
-                    </button>
+                    <Link to='/dashboard'>
+                        <button className='tombol-2'>
+                            <img src={Rectangle63} />
+                        </button>
+                    </Link>
                 </div>
                 <div className='logo-3'>
-                    <button className='tombol-2'>
-                        <img src={Group} />
-                    </button>
+                    <Link to='/dashboard'>
+                        <button className='tombol-2'>
+                            <img src={Group} />
+                        </button>
+                    </Link>
                 </div>
                 <div className='logo-3'>
-                    <button className='tombol-2'>
-                        <img src={Fitruck} />
-                    </button>
+                    <Link to='/list-cars'>
+                        <button className='tombol-2'>
+                            <img src={Fitruck} />
+                        </button>
+                    </Link>
                 </div>
-            </div>
-
-            <div className='dashboard-middle'>
-                <p className='dashboard-title'>DASHBOARD</p>
-                <p className='dashboard-option'>Dashboard</p>
             </div>
 
         </div>
