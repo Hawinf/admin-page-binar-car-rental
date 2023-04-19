@@ -1,5 +1,6 @@
 .dashboard-top {
     position: relative;
+    margin-left: 15px;
     left: 5%;
     width: 95%;
     display: flex;
@@ -17,19 +18,23 @@
 .dashboard-search {
     display: flex;
 }
+.dashboard-search .search {
+    height: 36px;
+}
 .dashboard-search .tombol-0 {
+    height: 36px;
     border: 1px solid #0D28A6;
     border-radius: 2px;
 }
 .dashboard-search .user {
-    margin: 10px;
+    margin: 7px;
 }
 .dashboard-search .first-letter {
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
     text-align: center;
-    margin: 10px 0 10px 10px;
+    margin: 5px 0 0px 10px;
     height: 30px;
     width: 30px;
     background: #CFD4ED;
@@ -38,16 +43,16 @@
 .dashboard-search .vector {
     height: 6px;
     width: 12px;
-    margin-top: 20px;
+    margin-top: 17px;
     margin-right: 20px;
 }
 
-
+/* End Of Dashboard Top */
 
 .dashboard-left {
     position: absolute;
     top: 0%;
-    width: 5%;
+    /* width: 5%; */
     height: 90vh;
     padding: 5px;
     background: #0D28A6;
@@ -59,4 +64,20 @@
 .dashboard-left .logo-3 .tombol-2 {
     border: 0;
     background: transparent;
+}
+/* End Of Dashboard Left */
+
+.dashboard-middle {
+    left: 8%;
+    position: absolute;
+}
+.dashboard-middle .dashboard-title {
+    margin-top: 15px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #8A8A8A;
+}
+.dashboard-middle .dashboard-option {
+    font-weight: 700;
+    font-size: 14px;
 }

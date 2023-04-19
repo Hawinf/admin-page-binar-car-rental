@@ -9,6 +9,7 @@ import './Dashboard.css'
 const Dashboard = () => {
     return (
         <div className='wrapper-dashboard'>
+
             <div className='dashboard-top'>
                 <div className='dashboard-logo'>
                     <img className='logo-1' src={Rectangle62} />
@@ -17,7 +18,7 @@ const Dashboard = () => {
                     </button>
                 </div>
                 <div className='dashboard-search'>
-                    <input placeholder='Search' />
+                    <input className='search' placeholder='Search' />
                     <button className='tombol-0'>Search</button>
                     <p className='first-letter'>H</p>
                     <p className='user'>User Email</p>
@@ -42,6 +43,12 @@ const Dashboard = () => {
                     </button>
                 </div>
             </div>
+
+            <div className='dashboard-middle'>
+                <p className='dashboard-title'>DASHBOARD</p>
+                <p className='dashboard-option'>Dashboard</p>
+            </div>
+
         </div>
     )
 }
