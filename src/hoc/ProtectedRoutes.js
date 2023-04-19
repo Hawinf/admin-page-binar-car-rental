@@ -1,7 +1,6 @@
 
-import { useState, useEffect } from "react";
-import { Outlet } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+import { useEffect, useState, useLayoutEffect } from "react";
+import { useNavigate, Outlet } from "react-router-dom";
 
 export const ProtectedRoute = () => {
     const [isLogin, setIsLogin] = useState(false);

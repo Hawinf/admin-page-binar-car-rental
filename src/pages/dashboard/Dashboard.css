@@ -1,0 +1,62 @@
+.dashboard-top {
+    position: relative;
+    left: 5%;
+    width: 95%;
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+}
+.dashboard-logo .logo-1 {
+    margin-right: 50px;
+}
+.dashboard-logo .tombol-1 {
+    border: 0;
+    background: transparent;
+}
+.dashboard-search {
+    display: flex;
+}
+.dashboard-search .tombol-0 {
+    border: 1px solid #0D28A6;
+    border-radius: 2px;
+}
+.dashboard-search .user {
+    margin: 10px;
+}
+.dashboard-search .first-letter {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    margin: 10px 0 10px 10px;
+    height: 30px;
+    width: 30px;
+    background: #CFD4ED;
+    border-radius: 50%;
+}
+.dashboard-search .vector {
+    height: 6px;
+    width: 12px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+
+
+.dashboard-left {
+    position: absolute;
+    top: 0%;
+    width: 5%;
+    height: 90vh;
+    padding: 5px;
+    background: #0D28A6;
+    display: block;
+}
+.dashboard-left .logo-3 {
+    padding: 10px;
+}
+.dashboard-left .logo-3 .tombol-2 {
+    border: 0;
+    background: transparent;
+}
