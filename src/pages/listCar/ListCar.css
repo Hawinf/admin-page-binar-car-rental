@@ -105,7 +105,7 @@
     margin: auto;
 }
 .card-list-cars .card-details {
-    padding: 20px;
+    padding: 20px 20px 0 20px;
 }
 .card-details .nama-mobil {
     font-weight: 400;
