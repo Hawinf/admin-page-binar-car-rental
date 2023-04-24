@@ -11,6 +11,9 @@
 .dashboard-middle .dashboard-option {
     font-weight: 700;
     font-size: 14px;
+    background: #CFD4ED;
+    width: 130px;
+    padding: 5px 0;
 }
 
 /* End Of Dashboard Middle */
