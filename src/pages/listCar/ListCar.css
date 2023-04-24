@@ -105,7 +105,7 @@
     margin: auto;
 }
 .card-list-cars .card-details {
-    padding: 10px;
+    padding: 20px;
 }
 .card-details .nama-mobil {
     font-weight: 400;
@@ -134,6 +134,8 @@
 
 .card-button {
     display: flex;
+    margin: auto;
+    padding-bottom: 10px;
 }
 .card-button .button-delete {
     width: 143.5px;
