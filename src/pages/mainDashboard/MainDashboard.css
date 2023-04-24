@@ -17,7 +17,8 @@
 .dashboard-main .dashboard-main-judul{
     display: flex;
     left: 20%;
-    position: relative;
+    /* position: relative; */
+    position: absolute;
     margin-top: 13px;
 }
 .dashboard-main-judul .main-judul-sign {

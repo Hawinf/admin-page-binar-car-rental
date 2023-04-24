@@ -20,8 +20,15 @@ const ListCar = () => {
             </div>
 
             <div className='add-list-cars'>
-                <h1>List Car</h1>
-                <button>Add New Car</button>
+                <h1 className='list-car-judul'>List Car</h1>
+                <button className='tomboh-add'>Add New Car</button>
+            </div>
+
+            <div className='option-button'>
+                <button className='option-button-1'>All</button>
+                <button className='option-button-2'>2 - 4 People</button>
+                <button className='option-button-2'>4 - 6 People</button>
+                <button className='option-button-2'>6 - 8 People</button>
             </div>
 
         </div>

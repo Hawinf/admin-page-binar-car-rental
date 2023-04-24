@@ -18,7 +18,8 @@
 .dashboard-main .dashboard-main-judul{
     display: flex;
     left: 20%;
-    position: relative;
+    /* position: relative; */
+    position: absolute;
     margin-top: 13px;
 }
 .dashboard-main-judul .main-judul-sign {
@@ -39,7 +40,52 @@
 
 .add-list-cars {
     display: flex;
+    justify-content: space-between;
+    left: 20%;
+    /* position: relative; */
+    /* position: absolute; */
+    margin-top: 40px;
+}
+.add-list-cars .list-car-judul {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
     left: 20%;
     position: relative;
-    margin-top: 13px;
+}
+.add-list-cars .tomboh-add {
+    width: 142px;
+    height: 36px;
+    background: #0D28A6;
+    border-radius: 2px;
+    border: 0;
+    color: #fff;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-right: 10px;
+}
+
+.option-button {
+    left: 20%;
+    position: absolute;
+}
+.option-button .option-button-1 {
+    width: 42px;
+    height: 36px;
+    margin-right: 5px;
+    border: 1px solid #0D28A6;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.option-button .option-button-2 {
+    width: 102px;
+    height: 36px;
+    margin-right: 5px;
+    border: 1px solid #0D28A6;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: 700;
 }
