@@ -89,3 +89,80 @@
     font-size: 14px;
     font-weight: 700;
 }
+
+.card-list-cars {
+    position: relative;
+    left: 20%;
+    width: 351px;
+    height: 482px;
+    margin-top: 50px;
+}
+.card-list-cars .card-image {
+    padding: 30px 10px 10px 10px;
+    margin: auto;
+}
+.card-list-cars .card-details {
+    padding: 10px;
+}
+.card-details .nama-mobil {
+    font-weight: 400;
+    font-size: 14px;
+}
+.card-details .harga-sewa {
+    font-weight: 700;
+    font-size: 16px;
+}
+.card-details .kategori {
+    display: flex;
+}
+.kategori .kategori-image{
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
+}
+.card-details .kategori-mobil {
+    font-weight: 400;
+    font-size: 12px;
+}
+.card-details .update-mobil {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.card-button {
+    display: flex;
+}
+.card-button .button-delete {
+    width: 143.5px;
+    height: 48px;
+    border: 1px solid #FA2C5A;
+    border-radius: 2px;
+    text-align: center;
+    margin: 10px;
+    line-height: 45px;
+}
+.card-button .button-delete .button-delete-1 {
+    background: transparent;
+    border: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+.card-button .button-edit {
+    width: 143.5px;
+    height: 48px;
+    border: 0 solid #FA2C5A;
+    border-radius: 2px;
+    text-align: center;
+    margin: 10px;
+    line-height: 45px;
+    background:  #5CB85F;
+    
+}
+.button-edit .button-edit-1 {
+    background: transparent;
+    border: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
