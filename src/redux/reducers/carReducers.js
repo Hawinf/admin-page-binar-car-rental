@@ -18,6 +18,11 @@ const carReducers = (state = initialState, Action) => {
                 ...initialState,
                 message : Action.payload
             }
+        case 'DELETE_CAR':
+            return {
+                ...initialState,
+                message : Action.payload
+            }
         default :
             return state
     }

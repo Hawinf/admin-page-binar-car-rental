@@ -6,7 +6,7 @@ import FiEdit from '../../assets/images/fi_edit.png'
 import FiPlus from '../../assets/images/fi_plus.png'
 import Category from '../../assets/images/fi_users.png'
 import Update from '../../assets/images/fi_clock.png'
-import { getCars } from '../../redux/actions/carAction'
+import { getCars, handleDelete } from '../../redux/actions/carAction'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link, useParams } from 'react-router-dom';
 import './ListCar.css'
@@ -33,6 +33,10 @@ const ListCar = () => {
         }
         // console.log('res')
         dispatch(getCars(configurasi))
+    }
+
+    const klikDelete = (id) => {
+        dispatch(handleDelete(id))
     }
 
     return (
@@ -94,7 +98,9 @@ const ListCar = () => {
                                             <div className='card-button'>
                                                 <div className='button-delete'>
                                                     <img src={FiDelete} />
-                                                    <button className='button-delete-1'>Delete</button>
+                                                    <button onClick={() => klikDelete(item.id)} className='button-delete-1'>
+                                                        Delete
+                                                    </button>
                                                 </div>
                                                 <div className='button-edit'>
                                                     <img src={FiEdit} />
