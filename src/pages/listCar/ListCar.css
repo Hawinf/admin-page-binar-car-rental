@@ -62,14 +62,16 @@
     background: #0D28A6;
     border-radius: 2px;
     border: 0;
-    color: #fff;
     font-family: Arial;
     font-size: 14px;
     font-weight: 700;
     line-height: 20px;
     margin-right: 10px;
 }
-
+.add-list-cars .tomboh-add .remove {
+    text-decoration: none;
+    color: #fff;
+}
 .option-button {
     left: 20%;
     position: absolute;

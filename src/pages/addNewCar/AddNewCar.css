@@ -1,0 +1,111 @@
+.dashboard-middle {
+    left: 8%;
+    position: absolute;
+}
+.dashboard-middle .dashboard-title {
+    margin-top: 15px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #8A8A8A;
+}
+.dashboard-middle .dashboard-option {
+    font-weight: 700;
+    font-size: 14px;
+    background: #CFD4ED;
+    width: 130px;
+    padding: 5px 0;
+}
+
+/* End Of Dashboard Middle */
+
+.dashboard-main .dashboard-main-judul{
+    display: flex;
+    left: 20%;
+    /* position: relative; */
+    position: absolute;
+    margin-top: 13px;
+}
+.dashboard-main-judul .main-judul-sign {
+    height: 8px;
+    width: 4px;
+    margin: 6px 5px 0 5px;
+}
+.dashboard-main-judul .judul-kiri{
+    font-size: 12px;
+    font-weight: 700;
+}
+.dashboard-main-judul .judul-kanan {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+/* End Of Dashboard Main */
+
+.add-list-cars {
+    display: flex;
+    justify-content: space-between;
+    left: 20%;
+    /* position: relative; */
+    /* position: absolute; */
+    margin-top: 40px;
+}
+.add-list-cars .list-car-judul {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    left: 20%;
+    position: relative;
+}
+
+
+
+
+
+.main-input {
+    position: relative;
+    left: 20%;
+}
+.main-input .input-data {
+    display: flex;
+    margin-bottom: 5px;
+}
+.input-data .input-title {
+    width: 147px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+.input-data .input-card {
+    width: 339px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+
+
+
+.wrapper-addnewcar .cancel-tombol {
+    border: 1px solid #0D28A6;
+    border-radius: 2px;
+    padding: 8px 12px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #0D28A6;
+    text-decoration: none;
+}
+.wrapper-addnewcar .save-tombol {
+    border: 0px;
+    border-radius: 2px;
+    padding: 8px 12px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffff;
+    text-decoration: none;
+    background: #0D28A6;
+    margin-left: 5px;
+}
+
+

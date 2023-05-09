@@ -54,7 +54,11 @@ const ListCar = () => {
 
             <div className='add-list-cars'>
                 <h1 className='list-car-judul'>List Car</h1>
-                <button className='tomboh-add'>Add New Car</button>
+                <button className='tomboh-add'>
+                    <Link to={'/add-new-car'} className='remove'>
+                        Add New Car
+                    </Link>
+                </button>
             </div>
 
             <div className='option-button'>
@@ -64,46 +68,51 @@ const ListCar = () => {
                 <button className='option-button-2'>6 - 8 People</button>
             </div>
 
-        {
-            !!carReducers.carsData.length ? carReducers.carsData.map((item, i) => {
-                return (
-                    <div className='' key={i}>
-                        <div className='card-list-cars'>
-                            <div className='card'>
-                                <div className='card-image'>
-                                    <img src={Car} />
-                                    {/* <img src={item.image}/> */}
+            <div className='container'>
+                <div className='row'>
+                    {
+                        !!carReducers.carsData.length ? carReducers.carsData.map((item, i) => {
+                            return (
+                                <div className='col-lg-4 offset-lg-1' key={i}>
+                                    <div className='card-list-cars'>
+                                        <div className='card'>
+                                            <div className='card-image'>
+                                                <img src={Car} />
+                                            </div>
+                                            <div className='card-details'>
+                                                <p className='nama-mobil'>{item.name}</p>
+                                                <h5 className='harga-sewa'>{item.price}</h5>
+                                                <div className='kategori'>
+                                                    <img className='kategori-image' src={Category} />
+                                                    <p className='kategori-mobil'>{item.category}</p>
+                                                </div>
+                                                <div className='kategori'>
+                                                    <img className='kategori-image' src={Update} />
+                                                    <p className='update-mobil'>{item.updatedAt}</p>
+                                                </div>
+                                            </div>
+                                            <div className='card-button'>
+                                                <div className='button-delete'>
+                                                    <img src={FiDelete} />
+                                                    <button className='button-delete-1'>Delete</button>
+                                                </div>
+                                                <div className='button-edit'>
+                                                    <img src={FiEdit} />
+                                                    <button className='button-edit-1'>Edit</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div className='card-details'>
-                                    <p className='nama-mobil'>{item.name}</p>
-                                    <h5 className='harga-sewa'>{item.price}</h5>
-                                    <div className='kategori'>
-                                        <img className='kategori-image' src={Category} />
-                                        <p className='kategori-mobil'>{item.category}</p>
-                                    </div>
-                                    <div className='kategori'>
-                                        <img className='kategori-image' src={Update} />
-                                        <p className='update-mobil'>{item.updatedAt}</p>
-                                    </div>
-                                </div>
-                                <div className='card-button'>
-                                    <div className='button-delete'>
-                                        <img src={FiDelete} />
-                                        <button className='button-delete-1'>Delete</button>
-                                    </div>
-                                    <div className='button-edit'>
-                                        <img src={FiEdit} />
-                                        <button className='button-edit-1'>Edit</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                )
-            }) : (null)
-        }
-            
+                            )
+                        }) : null
+                    }
+                </div>
+            </div>
+
         </div>
+            
+        
     )
 }
 

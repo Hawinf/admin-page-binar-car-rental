@@ -13,6 +13,11 @@ const carReducers = (state = initialState, Action) => {
                 ...initialState,
                 carsData : Action.payload,
             }
+        case 'ADD_NEW_CAR': 
+            return {
+                ...initialState,
+                message : Action.payload
+            }
         default :
             return state
     }
