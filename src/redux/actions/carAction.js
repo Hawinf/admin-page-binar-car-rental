@@ -54,3 +54,23 @@ export const handleDelete = (id) => dispatch => {
         })
         .catch((err) => console.log(err))
 }
+
+export const handleEdit = (id, formData) => dispatch => {
+    const token = localStorage.getItem('token')
+    const config = {
+        headers: {
+            access_token : token
+        }
+    }
+    axios 
+        .put(`https://bootcamp-rent-cars.herokuapp.com/admin/car/${id}`,formData, config)
+        .then((res) => {
+            console.log(res)
+
+            dispatch({
+                type: 'EDIT_CAR',
+                payload : res.statusText
+            })
+        })
+        .catch((err) => console.log(err))
+}

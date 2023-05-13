@@ -6,11 +6,11 @@ import FiEdit from '../../assets/images/fi_edit.png'
 import FiPlus from '../../assets/images/fi_plus.png'
 import Category from '../../assets/images/fi_users.png'
 import Update from '../../assets/images/fi_clock.png'
-import { getCars, handleDelete } from '../../redux/actions/carAction'
+import { getCars, handleDelete, handleEdit } from '../../redux/actions/carAction'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link, useParams } from 'react-router-dom';
 import './ListCar.css'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 const ListCar = () => {
 
@@ -104,7 +104,11 @@ const ListCar = () => {
                                                 </div>
                                                 <div className='button-edit'>
                                                     <img src={FiEdit} />
-                                                    <button className='button-edit-1'>Edit</button>
+                                                    <button className='button-edit-1'>
+                                                        <Link to={`/edit-car/${item.id}`}>
+                                                            Edit
+                                                        </Link>
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>
